@@ -84,8 +84,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -110,8 +109,7 @@
 											"underline": false,
 											"text": "Autobus",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -136,8 +134,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -161,8 +158,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -228,8 +224,7 @@
 											"underline": false,
 											"text": "-marca: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -257,8 +252,7 @@
 											"underline": false,
 											"text": "-modelo: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -286,8 +280,7 @@
 											"underline": false,
 											"text": "-numAsientos: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -341,8 +334,7 @@
 											"underline": false,
 											"text": "+Autobus(marca: String, modelo: String, numAsientos: int)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -370,8 +362,7 @@
 											"underline": false,
 											"text": "+getMarca(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -399,8 +390,7 @@
 											"underline": false,
 											"text": "+getModelo(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -428,8 +418,7 @@
 											"underline": false,
 											"text": "+getNumAsientos(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -579,8 +568,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -605,8 +593,7 @@
 											"underline": false,
 											"text": "Chofer",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -631,8 +618,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -656,8 +642,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -723,8 +708,7 @@
 											"underline": false,
 											"text": "-numEmpleado: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -752,8 +736,7 @@
 											"underline": false,
 											"text": "-nombre: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -781,8 +764,7 @@
 											"underline": false,
 											"text": "-nacimiento: Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -836,8 +818,7 @@
 											"underline": false,
 											"text": "+Chofer(numEmpleado: int, nombre: String, nacimiento: Fecha)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -865,8 +846,7 @@
 											"underline": false,
 											"text": "+getNumEmpleado(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -894,8 +874,7 @@
 											"underline": false,
 											"text": "+getNombre(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -923,8 +902,7 @@
 											"underline": false,
 											"text": "+getNacimiento(): Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1074,8 +1052,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1100,8 +1077,7 @@
 											"underline": false,
 											"text": "Ruta",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1126,8 +1102,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1151,8 +1126,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1218,8 +1192,7 @@
 											"underline": false,
 											"text": "-origen: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -1247,8 +1220,7 @@
 											"underline": false,
 											"text": "-destino: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -1276,8 +1248,7 @@
 											"underline": false,
 											"text": "-intermedios: LinkedList<String>",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1331,8 +1302,7 @@
 											"underline": false,
 											"text": "+Ruta(origen: String, destino: String, intermedios: LinkedList<String>)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1360,8 +1330,7 @@
 											"underline": false,
 											"text": "+getOrigen(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1389,8 +1358,7 @@
 											"underline": false,
 											"text": "+getDestino(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1418,8 +1386,7 @@
 											"underline": false,
 											"text": "+getIntermedios(): LinkedList<String>",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1569,8 +1536,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1595,8 +1561,7 @@
 											"underline": false,
 											"text": "Usuario",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1621,8 +1586,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -1646,8 +1610,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1713,8 +1676,7 @@
 											"underline": false,
 											"text": "-nombres: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -1742,8 +1704,7 @@
 											"underline": false,
 											"text": "-apellidos: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -1771,8 +1732,7 @@
 											"underline": false,
 											"text": "-contrasenia: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -1800,8 +1760,7 @@
 											"underline": false,
 											"text": "-correo: Email",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -1855,8 +1814,7 @@
 											"underline": false,
 											"text": "+Usuario(nombres: String, apellidos: String, contrasenia: String, correo: Email)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1884,8 +1842,7 @@
 											"underline": false,
 											"text": "+getNombres(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1913,8 +1870,7 @@
 											"underline": false,
 											"text": "+getApellidos(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1942,8 +1898,7 @@
 											"underline": false,
 											"text": "+getContrasenia(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -1971,8 +1926,7 @@
 											"underline": false,
 											"text": "+getCorreo(): Email",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2122,8 +2076,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2148,8 +2101,7 @@
 											"underline": false,
 											"text": "Email",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2174,8 +2126,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2199,8 +2150,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2266,8 +2216,7 @@
 											"underline": false,
 											"text": "-usuario: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2295,8 +2244,7 @@
 											"underline": false,
 											"text": "-dominio: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2350,8 +2298,7 @@
 											"underline": false,
 											"text": "+Email(usuario: String, dominio: String)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2379,8 +2326,7 @@
 											"underline": false,
 											"text": "+getUsuario(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2408,8 +2354,7 @@
 											"underline": false,
 											"text": "+getDominio(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2559,8 +2504,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2585,8 +2529,7 @@
 											"underline": false,
 											"text": "Viaje",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2611,8 +2554,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -2636,8 +2578,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2703,8 +2644,7 @@
 											"underline": false,
 											"text": "-rutaDeViaje: Ruta",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2732,8 +2672,7 @@
 											"underline": false,
 											"text": "-fechaDeViaje: Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2761,8 +2700,7 @@
 											"underline": false,
 											"text": "-horaSalida: Hora",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2790,8 +2728,7 @@
 											"underline": false,
 											"text": "-duracion: Hora",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2819,8 +2756,7 @@
 											"underline": false,
 											"text": "-busDeViaje: Autobus",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -2848,8 +2784,7 @@
 											"underline": false,
 											"text": "-precio: Double",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -2903,8 +2838,7 @@
 											"underline": false,
 											"text": "+Viaje(rutaDeViaje: Ruta, fechaDeViaje: Fecha, horaSalida: Hora, duracion: Hora, busDeViaje: Autbos, precio: Double)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2932,8 +2866,7 @@
 											"underline": false,
 											"text": "+getRutaDeViaje(): Ruta",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2961,8 +2894,7 @@
 											"underline": false,
 											"text": "+getFechaDeViaje(): Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -2990,8 +2922,7 @@
 											"underline": false,
 											"text": "+getHoraSalida(): Hora",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3019,8 +2950,7 @@
 											"underline": false,
 											"text": "+getBusDeViaje(): Autobus",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3048,8 +2978,7 @@
 											"underline": false,
 											"text": "+getPrecio(): double",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3199,8 +3128,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3225,8 +3153,7 @@
 											"underline": false,
 											"text": "Fecha",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3251,8 +3178,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3276,8 +3202,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3343,8 +3268,7 @@
 											"underline": false,
 											"text": "-dia: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3372,8 +3296,7 @@
 											"underline": false,
 											"text": "-mes: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3401,8 +3324,7 @@
 											"underline": false,
 											"text": "-anio: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3456,8 +3378,7 @@
 											"underline": false,
 											"text": "+Fecha(dia: int, mes: int, anio: int)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3485,8 +3406,7 @@
 											"underline": false,
 											"text": "+getDia(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3514,8 +3434,7 @@
 											"underline": false,
 											"text": "+getMes(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3543,8 +3462,7 @@
 											"underline": false,
 											"text": "+getAnio(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3694,8 +3612,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3720,8 +3637,7 @@
 											"underline": false,
 											"text": "Hora",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3746,8 +3662,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -3771,8 +3686,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3838,8 +3752,7 @@
 											"underline": false,
 											"text": "-horas: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -3867,8 +3780,7 @@
 											"underline": false,
 											"text": "-minutos: int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -3922,8 +3834,7 @@
 											"underline": false,
 											"text": "+Hora(horas: int, minutos: int)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3951,8 +3862,7 @@
 											"underline": false,
 											"text": "+getHoras(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -3980,8 +3890,7 @@
 											"underline": false,
 											"text": "+getMinutos(): int",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -4131,8 +4040,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -4157,8 +4065,7 @@
 											"underline": false,
 											"text": "Reservacion",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -4183,8 +4090,7 @@
 											"underline": false,
 											"text": "(from Model1)",
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "LabelView",
@@ -4208,8 +4114,7 @@
 											"autoResize": false,
 											"underline": false,
 											"horizontalAlignment": 1,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -4275,8 +4180,7 @@
 											"underline": false,
 											"text": "-origen: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -4304,8 +4208,7 @@
 											"underline": false,
 											"text": "-destino: String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -4333,8 +4236,7 @@
 											"underline": false,
 											"text": "-fechaDeSalida: Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -4362,8 +4264,7 @@
 											"underline": false,
 											"text": "-fechaDeRegreso: Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -4391,8 +4292,7 @@
 											"underline": false,
 											"text": "-redondo: boolean",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLAttributeView",
@@ -4420,8 +4320,7 @@
 											"underline": false,
 											"text": "-horaLlegada: Hora",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -4475,8 +4374,7 @@
 											"underline": false,
 											"text": "+Reservacion(origen: String, destino: String, fechaDeSalida: Fecha, fechaDeRegreso: Fecha, redondo: Boolean, horaLlegada; Hora)",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4504,8 +4402,7 @@
 											"underline": false,
 											"text": "+getOrigen(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4533,8 +4430,7 @@
 											"underline": false,
 											"text": "+getDestino(): String",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4562,8 +4458,7 @@
 											"underline": false,
 											"text": "+getFechaDeSalida(): Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4591,8 +4486,7 @@
 											"underline": false,
 											"text": "+getFechaDeRegreso(): Fecha",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4620,8 +4514,7 @@
 											"underline": false,
 											"text": "+getRedondo(): Boolean",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										},
 										{
 											"_type": "UMLOperationView",
@@ -4649,8 +4542,7 @@
 											"underline": false,
 											"text": "+getHoraLlegada(): Hora",
 											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
+											"verticalAlignment": 5
 										}
 									],
 									"visible": true,
@@ -4756,6 +4648,290 @@
 							},
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAFjkNzF34NuA8s="
+							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFjk6tCG0idmfA=",
+							"_parent": {
+								"$ref": "AAAAAAFjkKTJX4E9wMM="
+							},
+							"model": {
+								"$ref": "AAAAAAFjk6tCGkibcao="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFjk6tCHEie91k=",
+									"_parent": {
+										"$ref": "AAAAAAFjk6tCG0idmfA="
+									},
+									"model": {
+										"$ref": "AAAAAAFjk6tCGkibcao="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFjk6tCHEifkqQ=",
+											"_parent": {
+												"$ref": "AAAAAAFjk6tCHEie91k="
+											},
+											"visible": false,
+											"enabled": true,
+											"lineColor": "#000000",
+											"fillColor": "#ffffff",
+											"fontColor": "#000000",
+											"font": "Arial;13;0",
+											"showShadow": true,
+											"containerChangeable": false,
+											"containerExtending": false,
+											"left": 0,
+											"top": 0,
+											"width": 0,
+											"height": 13,
+											"autoResize": false,
+											"underline": false,
+											"horizontalAlignment": 2,
+											"verticalAlignment": 5
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFjk6tCHEigURs=",
+											"_parent": {
+												"$ref": "AAAAAAFjk6tCHEie91k="
+											},
+											"visible": true,
+											"enabled": true,
+											"lineColor": "#000000",
+											"fillColor": "#ffffff",
+											"fontColor": "#000000",
+											"font": "Arial;13;1",
+											"showShadow": true,
+											"containerChangeable": false,
+											"containerExtending": false,
+											"left": 533,
+											"top": 39,
+											"width": 166,
+											"height": 13,
+											"autoResize": false,
+											"underline": false,
+											"text": "HashFunction",
+											"horizontalAlignment": 2,
+											"verticalAlignment": 5
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFjk6tCHEihYR4=",
+											"_parent": {
+												"$ref": "AAAAAAFjk6tCHEie91k="
+											},
+											"visible": false,
+											"enabled": true,
+											"lineColor": "#000000",
+											"fillColor": "#ffffff",
+											"fontColor": "#000000",
+											"font": "Arial;13;0",
+											"showShadow": true,
+											"containerChangeable": false,
+											"containerExtending": false,
+											"left": 0,
+											"top": 0,
+											"width": 80.9072265625,
+											"height": 13,
+											"autoResize": false,
+											"underline": false,
+											"text": "(from Model1)",
+											"horizontalAlignment": 2,
+											"verticalAlignment": 5
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFjk6tCHEiiNPs=",
+											"_parent": {
+												"$ref": "AAAAAAFjk6tCHEie91k="
+											},
+											"visible": false,
+											"enabled": true,
+											"lineColor": "#000000",
+											"fillColor": "#ffffff",
+											"fontColor": "#000000",
+											"font": "Arial;13;0",
+											"showShadow": true,
+											"containerChangeable": false,
+											"containerExtending": false,
+											"left": 0,
+											"top": 0,
+											"width": 0,
+											"height": 13,
+											"autoResize": false,
+											"underline": false,
+											"horizontalAlignment": 1,
+											"verticalAlignment": 5
+										}
+									],
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 528,
+									"top": 32,
+									"width": 176,
+									"height": 25,
+									"autoResize": false,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFjk6tCHEifkqQ="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFjk6tCHEigURs="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFjk6tCHEihYR4="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFjk6tCHEiiNPs="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFjk6tCHUijyy8=",
+									"_parent": {
+										"$ref": "AAAAAAFjk6tCG0idmfA="
+									},
+									"model": {
+										"$ref": "AAAAAAFjk6tCGkibcao="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 528,
+									"top": 57,
+									"width": 176,
+									"height": 10,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFjk6tCHUikFJQ=",
+									"_parent": {
+										"$ref": "AAAAAAFjk6tCG0idmfA="
+									},
+									"model": {
+										"$ref": "AAAAAAFjk6tCGkibcao="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 528,
+									"top": 67,
+									"width": 176,
+									"height": 10,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFjk6tCHUilELs=",
+									"_parent": {
+										"$ref": "AAAAAAFjk6tCG0idmfA="
+									},
+									"model": {
+										"$ref": "AAAAAAFjk6tCGkibcao="
+									},
+									"visible": false,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 0,
+									"top": 0,
+									"width": 10,
+									"height": 10,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFjk6tCHUimOZg=",
+									"_parent": {
+										"$ref": "AAAAAAFjk6tCG0idmfA="
+									},
+									"model": {
+										"$ref": "AAAAAAFjk6tCGkibcao="
+									},
+									"visible": false,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 0,
+									"top": 0,
+									"width": 10,
+									"height": 10,
+									"autoResize": false
+								}
+							],
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": true,
+							"containerExtending": false,
+							"left": 528,
+							"top": 32,
+							"width": 176,
+							"height": 144,
+							"autoResize": false,
+							"stereotypeDisplay": "label",
+							"showVisibility": true,
+							"showNamespace": false,
+							"showProperty": true,
+							"showType": true,
+							"nameCompartment": {
+								"$ref": "AAAAAAFjk6tCHEie91k="
+							},
+							"wordWrap": false,
+							"suppressAttributes": false,
+							"suppressOperations": false,
+							"suppressReceptions": true,
+							"showMultiplicity": true,
+							"showOperationSignature": true,
+							"attributeCompartment": {
+								"$ref": "AAAAAAFjk6tCHUijyy8="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFjk6tCHUikFJQ="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFjk6tCHUilELs="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFjk6tCHUimOZg="
 							}
 						}
 					]
@@ -7155,6 +7331,19 @@
 							"isAbstract": false
 						}
 					],
+					"isAbstract": false,
+					"isFinalSpecialization": false,
+					"isLeaf": false,
+					"isActive": false
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFjk6tCGkibcao=",
+					"_parent": {
+						"$ref": "AAAAAAFjkKTJX4E8gEw="
+					},
+					"name": "HashFunction",
+					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
 					"isLeaf": false,
