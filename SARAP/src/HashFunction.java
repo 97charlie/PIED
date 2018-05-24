@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import insercion.*;
+import Insercion.*;
 // If we think of a Hash Table as an array
 // then a hash function is used to generate
 // a unique key for every item in the array.
@@ -12,11 +12,14 @@ import insercion.*;
 // offers fast insertion and searching capabilities.
 
 public class HashFunction {
-
+        static int[] Asientos;
 	String[] theArray;
 	int arraySize;
 	int itemsInArray = 0;
-        
+       // static String[] elementsToAdd2 = { "100", "510", "170", "214", "268", "398",
+	//			"235", "802", "900", "723", "699", "1", "16", "999", "890",
+	//			"725", "998", "978", "988", "990", "989", "984", "320", "321",
+	//			"400", "415", "450", "50", "660", "624" };
         
         
     public HashFunction(String[] theArray, int arraySize, Usuario unUsuario, Autobus unAutobus) {
@@ -27,8 +30,10 @@ public class HashFunction {
         
 
 	public static void main(String[] args) {
-
+                Email unEmail= new Email("charlie",".hotmail.com");
+                Autobus unAutobus= new Autobus("Wo","Xa", 30);
 		HashFunction theFunc = new HashFunction(unAutobus.getNumAsientos());
+                Usuario unUsuario= new Usuario( "String","String2" ,"String3" , unEmail );
 
 		// Simplest Hash Function
 
@@ -46,12 +51,14 @@ public class HashFunction {
 				"235", "802", "900", "723", "699", "1", "16", "999", "890",
 				"725", "998", "978", "988", "990", "989", "984", "320", "321",
 				"400", "415", "450", "50", "660", "624" };
-
+                
+            //    asignAsiento(elementsToAdd2);
+                
 		theFunc.hashFunction2(elementsToAdd2, theFunc.theArray);
 
 		// Locate the value 660 in the Hash Table
 
-		theFunc.findKey("660" /*unMail*/);
+		theFunc.findKey("50", unAutobus.getNumAsientos());
 
 		theFunc.displayTheTable();
 
@@ -83,6 +90,12 @@ public class HashFunction {
 
 	// The goal is to make the array big enough to avoid
 	// collisions, but not so big that we waste memory
+        
+       // public static void asignAsiento(String[] seat){
+         //   for(int i=0; i<seat.length; i++){
+           //     Asientos[i]=Integer.parseInt(seat[i]);
+            //}
+        //}
 
 	public void hashFunction2(String[] stringsForArray, String[] theArray) {
 
@@ -100,7 +113,7 @@ public class HashFunction {
 
 			// Cycle through the array until we find an empty space
 
-			while (theArray[arrayIndex] != "-1") {
+			while (theArray[arrayIndex] != "null") {
 
 				++arrayIndex;
 
@@ -120,11 +133,11 @@ public class HashFunction {
 
 	// Returns the value stored in the Hash Table
 
-	public String findKey(Email unUsuario.getEmail(), unAutobus) {
-            key=Email unUsuario.getEmail();
+	public String findKey(String key, int BusSeat) {
+         //   key=String unUsuario.getCorreo();
 		// Find the keys original hash key
-		int arrayIndexHash = Integer.parseInt(key) % (unAutobus.getNumAsientos() - 1);
-
+		int arrayIndexHash = Integer.parseInt(key) % (BusSeat - 1);
+                
 		while (theArray[arrayIndexHash] != "null") {
 
 			if (theArray[arrayIndexHash] == key) {
