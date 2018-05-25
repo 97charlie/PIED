@@ -154,7 +154,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jTextField7.setToolTipText("");
         getContentPane().add(jTextField7);
-        jTextField7.setBounds(350, 250, 60, 22);
+        jTextField7.setBounds(330, 250, 60, 22);
 
         jLabel9.setText("Nacimiento");
         getContentPane().add(jLabel9);
@@ -178,7 +178,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jTextField9.setToolTipText("");
         getContentPane().add(jTextField9);
-        jTextField9.setBounds(300, 250, 40, 22);
+        jTextField9.setBounds(290, 250, 40, 22);
 
         jLabel10.setText("Ruta");
         getContentPane().add(jLabel10);
@@ -258,7 +258,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jTextField14.setToolTipText("");
         getContentPane().add(jTextField14);
-        jTextField14.setBounds(400, 500, 40, 22);
+        jTextField14.setBounds(390, 500, 40, 22);
 
         jButton13.setText("Limpiar");
         getContentPane().add(jButton13);
@@ -282,7 +282,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jTextField16.setToolTipText("");
         getContentPane().add(jTextField16);
-        jTextField16.setBounds(290, 500, 40, 22);
+        jTextField16.setBounds(280, 500, 40, 22);
 
         jTextField18.setToolTipText("");
         getContentPane().add(jTextField18);
