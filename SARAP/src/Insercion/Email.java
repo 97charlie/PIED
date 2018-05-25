@@ -34,5 +34,7 @@ public class Email {
         this.dominio = dominio;
     }
     
-    
+        public String toString(){
+        return getUsuario()+ "@" + getDominio();
+    }
 }

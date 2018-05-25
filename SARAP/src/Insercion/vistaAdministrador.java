@@ -76,7 +76,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
         horaTextField = new javax.swing.JTextField();
         minutoTextField = new javax.swing.JTextField();
         horaDuraTextField = new javax.swing.JTextField();
-        IDBusTextField = new javax.swing.JTextField();
+        idBusTextField = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         precioTextField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
@@ -286,9 +286,9 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(horaDuraTextField);
         horaDuraTextField.setBounds(380, 500, 40, 22);
 
-        IDBusTextField.setToolTipText("");
-        getContentPane().add(IDBusTextField);
-        IDBusTextField.setBounds(20, 110, 90, 22);
+        idBusTextField.setToolTipText("");
+        getContentPane().add(idBusTextField);
+        idBusTextField.setBounds(20, 110, 90, 22);
 
         jLabel20.setText("ID Bus");
         getContentPane().add(jLabel20);
@@ -364,7 +364,6 @@ public class vistaAdministrador extends javax.swing.JFrame {
     public javax.swing.JButton EliminarBusButton;
     public javax.swing.JButton EliminarChoferButton;
     public javax.swing.JButton EliminarRutaButton;
-    public javax.swing.JTextField IDBusTextField;
     public javax.swing.JButton LimpiarBusButton;
     public javax.swing.JButton LimpiarChoferButton;
     public javax.swing.JButton LimpiarRutaButton;
@@ -377,6 +376,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
     public javax.swing.JTextField destinoTextField;
     public javax.swing.JTextField horaDuraTextField;
     public javax.swing.JTextField horaTextField;
+    public javax.swing.JTextField idBusTextField;
     public javax.swing.JTextField idRutaTextFieldRuta;
     public javax.swing.JTextField idRutaTextFieldViaje;
     public javax.swing.JTextField intermediosTextField;

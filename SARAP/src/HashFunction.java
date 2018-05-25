@@ -31,7 +31,7 @@ public class HashFunction {
 
 	public static void main(String[] args) {
                 Email unEmail= new Email("charlie",".hotmail.com");
-                Autobus unAutobus= new Autobus("Wo","Xa", 30);
+                Autobus unAutobus= new Autobus(1,30,"Wo","Xa");
 		HashFunction theFunc = new HashFunction(unAutobus.getNumAsientos());
                 Usuario unUsuario= new Usuario( "String","String2" ,"String3" , unEmail );
 
