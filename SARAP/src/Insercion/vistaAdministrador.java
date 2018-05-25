@@ -80,14 +80,12 @@ public class vistaAdministrador extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         precioTextField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        DiaNacimientoTextField1 = new javax.swing.JTextField();
-        mesNacimientoTextField1 = new javax.swing.JTextField();
-        anioNacimientoTextField1 = new javax.swing.JTextField();
+        DiaViajeTextField = new javax.swing.JTextField();
+        mesViajeTextField = new javax.swing.JTextField();
+        anioViajeTextField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(600, 640));
         setMinimumSize(new java.awt.Dimension(600, 640));
-        setPreferredSize(new java.awt.Dimension(600, 640));
         setSize(new java.awt.Dimension(600, 640));
         getContentPane().setLayout(null);
 
@@ -304,17 +302,17 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel21);
         jLabel21.setBounds(510, 480, 40, 16);
 
-        DiaNacimientoTextField1.setToolTipText("");
-        getContentPane().add(DiaNacimientoTextField1);
-        DiaNacimientoTextField1.setBounds(120, 500, 40, 22);
+        DiaViajeTextField.setToolTipText("");
+        getContentPane().add(DiaViajeTextField);
+        DiaViajeTextField.setBounds(120, 500, 40, 22);
 
-        mesNacimientoTextField1.setToolTipText("");
-        getContentPane().add(mesNacimientoTextField1);
-        mesNacimientoTextField1.setBounds(160, 500, 40, 22);
+        mesViajeTextField.setToolTipText("");
+        getContentPane().add(mesViajeTextField);
+        mesViajeTextField.setBounds(160, 500, 40, 22);
 
-        anioNacimientoTextField1.setToolTipText("");
-        getContentPane().add(anioNacimientoTextField1);
-        anioNacimientoTextField1.setBounds(200, 500, 60, 22);
+        anioViajeTextField.setToolTipText("");
+        getContentPane().add(anioViajeTextField);
+        anioViajeTextField.setBounds(200, 500, 60, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -360,9 +358,9 @@ public class vistaAdministrador extends javax.swing.JFrame {
     public javax.swing.JButton AgregarChoferButton;
     public javax.swing.JButton AgregarRutaButton;
     public javax.swing.JTextField AsientosTextField;
-    private javax.swing.JButton CerrarSesionButton;
+    public javax.swing.JButton CerrarSesionButton;
     public javax.swing.JTextField DiaNacimientoTextField;
-    public javax.swing.JTextField DiaNacimientoTextField1;
+    public javax.swing.JTextField DiaViajeTextField;
     public javax.swing.JButton EliminarBusButton;
     public javax.swing.JButton EliminarChoferButton;
     public javax.swing.JButton EliminarRutaButton;
@@ -375,7 +373,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
     public javax.swing.JTextField NombreTextField;
     public javax.swing.JTextField NumEmpleadoTextField;
     public javax.swing.JTextField anioNacimientoTextField;
-    public javax.swing.JTextField anioNacimientoTextField1;
+    public javax.swing.JTextField anioViajeTextField;
     public javax.swing.JTextField destinoTextField;
     public javax.swing.JTextField horaDuraTextField;
     public javax.swing.JTextField horaTextField;
@@ -407,7 +405,7 @@ public class vistaAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     public javax.swing.JTextField mesNacimientoTextField;
-    public javax.swing.JTextField mesNacimientoTextField1;
+    public javax.swing.JTextField mesViajeTextField;
     public javax.swing.JTextField minutoTextField;
     public javax.swing.JTextField minutosDuraTextField;
     public javax.swing.JTextField origenTextField;
