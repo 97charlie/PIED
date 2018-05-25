@@ -1,2 +1,4 @@
-merida,campeche
-merida,campeche,tabasco,veracruz
+1,merida,campeche,tzitia
+2,merida,chetumal,cancun
+3,merida,mexico,veracruz
+4,chetumal,merida,campeche

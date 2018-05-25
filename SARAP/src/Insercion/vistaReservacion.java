@@ -64,15 +64,15 @@ public class vistaReservacion extends javax.swing.JFrame {
 
         AgregarButton.setText("Agregar");
         getContentPane().add(AgregarButton);
-        AgregarButton.setBounds(20, 210, 79, 25);
+        AgregarButton.setBounds(20, 210, 90, 25);
 
         EliminarButton.setText("Eliminar");
         getContentPane().add(EliminarButton);
-        EliminarButton.setBounds(110, 210, 79, 25);
+        EliminarButton.setBounds(110, 210, 90, 25);
 
         LimpiarButton.setText("Limpiar");
         getContentPane().add(LimpiarButton);
-        LimpiarButton.setBounds(200, 210, 75, 25);
+        LimpiarButton.setBounds(200, 210, 90, 25);
 
         OrigenTextField.setToolTipText("");
         getContentPane().add(OrigenTextField);

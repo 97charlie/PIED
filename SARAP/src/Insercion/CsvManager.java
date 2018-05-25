@@ -131,7 +131,7 @@ public class CsvManager {
         try {
 
             File inputFile = new File(getCsvURL());
-            File tempFile = new File("myTempFile.txt");
+            File tempFile = new File("TempFile.txt");
 
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
@@ -148,7 +148,11 @@ public class CsvManager {
             }
             writer.close();
             reader.close();
-            boolean successful = tempFile.renameTo(inputFile);
+            inputFile.delete();
+            boolean successful = tempFile.renameTo(new File(getCsvURL()));
+            if (successful) {
+                System.out.println("Se ha eliminado la fila " + auxString);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e);

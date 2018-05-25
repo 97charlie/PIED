@@ -8,10 +8,11 @@
  *
  * @author MS
  */
+import Insercion.*;
 
-import Insercion.ControladorVistaAdministrador;
 public class Test {
-    public static void main(String[] args){
-        new ControladorVistaAdministrador();
+
+    public static void main(String[] args) {
+        new ControladorLogin();
     }
 }

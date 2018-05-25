@@ -55,6 +55,10 @@ public class Login extends javax.swing.JFrame {
         passRegistrarTextField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(449, 540));
+        setMinimumSize(new java.awt.Dimension(449, 540));
+        setPreferredSize(new java.awt.Dimension(449, 540));
+        setSize(new java.awt.Dimension(449, 540));
         getContentPane().setLayout(null);
 
         jLabelUsr.setText("Email");
