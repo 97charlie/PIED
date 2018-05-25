@@ -71,11 +71,10 @@ public class csvManager {
                 StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
 
                 for (int i = 0; i < tokenizedLine.countTokens(); i++) {
-                    if (tokenizedLine.nextElement().equals(auxString)) {
+                    if (tokenizedLine.nextToken().equals(auxString)) {
                         return lectorLine;
                     }
                 }
-
             }
 
         } catch (Exception e) {
