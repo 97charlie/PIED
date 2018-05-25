@@ -49,6 +49,10 @@ public class Insertar extends javax.swing.JFrame {
         jButtonCancelar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPaneVer = new javax.swing.JTextPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTextFieldHora = new javax.swing.JTextField();
+        jTextFieldFecha = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mis Password : Insercion.net");
@@ -98,6 +102,10 @@ public class Insertar extends javax.swing.JFrame {
         jTextPaneVer.setEditable(false);
         jScrollPane2.setViewportView(jTextPaneVer);
 
+        jLabel1.setText("Hora");
+
+        jLabel2.setText("fecha");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -109,7 +117,9 @@ public class Insertar extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelNombre)
                             .addComponent(jLabelUsuario)
-                            .addComponent(jLabelPasswoed))
+                            .addComponent(jLabelPasswoed)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -118,7 +128,9 @@ public class Insertar extends javax.swing.JFrame {
                                 .addComponent(jButtonLimpiar))
                             .addComponent(JtextFieldClaveusr)
                             .addComponent(JtextFieldBus)
-                            .addComponent(jTextFielDestino)))
+                            .addComponent(jTextFielDestino)
+                            .addComponent(jTextFieldHora)
+                            .addComponent(jTextFieldFecha)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -151,18 +163,25 @@ public class Insertar extends javax.swing.JFrame {
                     .addComponent(jTextFielDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonLimpiar)
-                    .addComponent(jButtonAnadir))
-                .addGap(36, 36, 36)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextFieldHora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jTextFieldFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonAnadir)
+                    .addComponent(jButtonLimpiar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonCancelar)
-                    .addComponent(jButtonGuardar))
-                .addGap(25, 25, 25))
+                    .addComponent(jButtonGuardar)
+                    .addComponent(jButtonCancelar)))
         );
 
-        setSize(new java.awt.Dimension(401, 521));
+        setSize(new java.awt.Dimension(401, 608));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -179,6 +198,8 @@ public class Insertar extends javax.swing.JFrame {
         JtextFieldClaveusr.setText("");
         JtextFieldBus.setText("");
         jTextFielDestino.setText("");
+          jTextFieldFecha.setText("");
+        jTextFieldHora.setText("");
 
     }//GEN-LAST:event_jButtonLimpiarActionPerformed
 
@@ -187,14 +208,20 @@ public class Insertar extends javax.swing.JFrame {
         String nuevoItem; // String con Clave, autobus y destino que queremos guardar
 
         // Si algun campo está vacio, mostramos un mensaje informando de que faltan datos
-        if (JtextFieldClaveusr.getText().equals("") || JtextFieldBus.getText().equals("") || jTextFielDestino.getText().equals("")) {
+
+        if (JtextFieldClaveusr.getText().equals("") || JtextFieldBus.getText().equals("") || jTextFielDestino.getText().equals("")||jTextFieldFecha.equals("")||jTextFieldHora.equals("")) {
+
+        
+
             JOptionPane.showMessageDialog(this, "ERROR: Faltan datos", "Mensaje de Error", JOptionPane.WARNING_MESSAGE);
             return;
+        
         }
-
-        nuevoItem = JtextFieldClaveusr.getText() + " " + JtextFieldBus.getText() + " " + jTextFielDestino.getText() + " \n";
+        nuevoItem = JtextFieldClaveusr.getText() + " " + JtextFieldBus.getText() + " " + jTextFielDestino.getText() +jTextFieldHora.getText()+jTextFieldFecha.getText()+ " \n";
+            
         destinosGuardar.add(nuevoItem);
         jTextPaneVer.setText(jTextPaneVer.getText() + nuevoItem);
+        
     }//GEN-LAST:event_jButtonAnadirActionPerformed
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
@@ -255,12 +282,16 @@ public class Insertar extends javax.swing.JFrame {
     private javax.swing.JButton jButtonCancelar;
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JButton jButtonLimpiar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelNombre;
     private javax.swing.JLabel jLabelPasswoed;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JLabel jLabelUsuario;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextFielDestino;
+    private javax.swing.JTextField jTextFieldFecha;
+    private javax.swing.JTextField jTextFieldHora;
     private javax.swing.JTextPane jTextPaneVer;
     // End of variables declaration//GEN-END:variables
 }
