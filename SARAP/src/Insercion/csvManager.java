@@ -1,8 +1,11 @@
 package Insercion;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -56,6 +59,31 @@ public class csvManager {
             e.printStackTrace();
             System.out.println(e);
         }
+    }
+
+    public String buscarEnArchivo(String auxString) {
+
+        try {
+            Scanner lectorArchivo = new Scanner(new File(getCsvURL()));
+
+            while (lectorArchivo.hasNextLine()) {
+                String lectorLine = lectorArchivo.nextLine();
+                StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
+
+                for (int i = 0; i < tokenizedLine.countTokens(); i++) {
+                    if (tokenizedLine.nextElement().equals(auxString)) {
+                        return lectorLine;
+                    }
+                }
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e);
+        }
+
+        return null;
     }
 
 }
