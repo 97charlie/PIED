@@ -12,14 +12,24 @@ import java.util.LinkedList;
  * @author MS
  */
 public class Ruta {
+    private int idRuta;
     private String origen;
     private String destino;
     private LinkedList<String> intermedios;
 
-    public Ruta(String origen, String destino, LinkedList<String> intermedios) {
+    public Ruta(int idRuta, String origen, String destino, LinkedList<String> intermedios) {
+        this.idRuta = idRuta;
         this.origen = origen;
         this.destino = destino;
         this.intermedios = intermedios;
+    }
+
+    public int getIdRuta() {
+        return idRuta;
+    }
+
+    public void setIdRuta(int idRuta) {
+        this.idRuta = idRuta;
     }
 
     public String getOrigen() {

@@ -10,16 +10,27 @@ package Insercion;
  * @author MS
  */
 public class Autobus {
+    private int idAutobus;
+    private int numAsientos;
     private String marca;
     private String modelo;
-    private int numAsientos;
 
-    public Autobus(String marca, String modelo, int numAsientos) {
+    public Autobus(int idAutobus, int numAsientos, String marca, String modelo) {
+        this.idAutobus = idAutobus;
+        this.numAsientos = numAsientos;
         this.marca = marca;
         this.modelo = modelo;
-        this.numAsientos = numAsientos;
     }
 
+    public int getIdAutobus() {
+        return idAutobus;
+    }
+
+    public void setIdAutobus(int idAutobus) {
+        this.idAutobus = idAutobus;
+    }
+    
+    
     public String getMarca() {
         return marca;
     }

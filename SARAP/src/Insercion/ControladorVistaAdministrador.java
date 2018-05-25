@@ -24,6 +24,11 @@ public class ControladorVistaAdministrador {
         this.adminView = adminView;
     }
     
+    public void agregarBus(int idBus, int asientos,String marca, String modelo){
+        Autobus auxBus = new Autobus(idBus, asientos, marca, modelo);
+        
+        
+    }
     
     
 }
