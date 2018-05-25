@@ -5,6 +5,8 @@
  */
 package Insercion;
 
+import java.util.StringTokenizer;
+
 /**
  *
  * @author MS
@@ -13,6 +15,13 @@ public class Email {
 
     private String usuario;
     private String dominio;
+
+    public Email(String email) {
+        StringTokenizer userDom = new StringTokenizer(email,"@");
+        this.usuario = userDom.nextToken();
+        StringTokenizer domCom = new StringTokenizer(getUsuario(),".");
+        this.dominio = domCom.nextToken();
+    }
 
     public Email(String usuario, String dominio) {
         this.usuario = usuario;
@@ -36,6 +45,6 @@ public class Email {
     }
 
     public String toString() {
-        return getUsuario() + "@" + getDominio();
+        return getUsuario() + "@" + getDominio() + ".com";
     }
 }

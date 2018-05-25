@@ -18,6 +18,9 @@ public class Hash {
 
     public Hash(int asientos) {
         setAsientos(asientos);
+        for (int i = 0; i < getAsientos(); i++) {
+            ListaDeListas.set(i, null);
+        }
     }
 
     public int getAsientos() {
@@ -37,10 +40,19 @@ public class Hash {
     }
 
     public void agregar(Usuario auxUser) {
-        
+        int key = (int) hashFunc(auxUser.getCorreo().toString());
+        if (ListaDeListas.get(key) == null) {
+            LinkedList<Usuario> auxList = new LinkedList<Usuario>();
+            auxList.add(auxUser);
+            ListaDeListas.set(key, auxList);
+        } else {
+            LinkedList<Usuario> auxList = ListaDeListas.get(key);
+            auxList.add(auxUser);
+            ListaDeListas.set(key, auxList);
+        }
     }
 
-    public long hashFunc(String email) {
+    private long hashFunc(String email) {
         int intLength = email.length() - 5 / 4;//-5 por el @ y el .com
         long sum = 0;
         for (int j = 0; j < intLength; j++) {
@@ -61,4 +73,17 @@ public class Hash {
 
         return (Math.abs(sum) % getAsientos());
     }
+
+    @Override
+    public String toString() {
+        for (int i = 0; i < ListaDeListas.size(); i++) {
+            for (int j = 0; j < ListaDeListas.get(i).size(); j++) {
+                System.out.print(ListaDeListas.get(i).get(j) + "-");
+
+            }
+            System.out.println("");
+        }
+        return "";
+    }
+
 }

@@ -19,7 +19,8 @@ import javax.swing.JOptionPane;
 public class ControladorVistaReservacion {
 
     private vistaReservacion reservacionView;
-    private Email emailUser;
+    private Usuario user;
+    private Hash tablaHash;
 
     public ControladorVistaReservacion() {
         iniciarVista();
@@ -33,14 +34,26 @@ public class ControladorVistaReservacion {
         this.reservacionView = reservacionView;
     }
 
-    public Email getEmailUser() {
-        return emailUser;
+    public Usuario getUser() {
+        return user;
     }
 
-    public void setEmailUser(Email emailUser) {
-        this.emailUser = emailUser;
+    public void setUser(Usuario user) {
+        this.user = user;
     }
 
+
+    public Hash getTablaHash() {
+        return tablaHash;
+    }
+
+    public void setTablaHash(Hash tablaHash) {
+        this.tablaHash = tablaHash;
+    }
+    
+    
+    
+    
     public void iniciarVista() {
         setReservacionView(new vistaReservacion());
         getReservacionView().setVisible(true);
@@ -117,9 +130,21 @@ public class ControladorVistaReservacion {
                 CsvManager manejador = new CsvManager("Viaje.txt");
                 String boolString = manejador.buscarEnArchivoDarLinea(origen, destino);
                 if (boolString != null) {
-                    getReservacionView().setVisible(false);
+                    StringTokenizer bsTokenizer = new StringTokenizer(boolString,",");
+                    bsTokenizer.nextToken();//ruta
+                    
+                    CsvManager manejadorBus = new CsvManager("Autobus.txt");
+                    String bus = manejadorBus.buscarEnArchivoDarLinea(bsTokenizer.nextToken());//Autobus
+                    
+                    StringTokenizer busTokenizer = new StringTokenizer(bus,",");
+                    busTokenizer.nextToken();//idBus
+                    busTokenizer.nextToken();//idMarca
                     //hash
-                    getReservacionView().dispose();
+                    tablaHash = new Hash(Integer.parseInt(busTokenizer.nextToken()));//asientos
+                    tablaHash.agregar(user);
+                    tablaHash.toString();
+                    //-----------
+                    
                 } else {
                     JOptionPane.showMessageDialog(null, "No se encontró un viaje con esas características");
                 }

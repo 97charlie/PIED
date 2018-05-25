@@ -2,6 +2,7 @@ package Insercion;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
 
 public class ControladorLogin {
@@ -43,7 +44,9 @@ public class ControladorLogin {
                     String boolString = manejador.buscarEnArchivoDarLinea(nombre, pass);
                     if (boolString != null) {
                         getLogFrame().setVisible(false);
-                        new ControladorVistaReservacion();
+                        ControladorVistaReservacion resCon = new ControladorVistaReservacion();
+                        StringTokenizer bsTokenizer = new StringTokenizer(boolString,",");
+                        resCon.setUser(new Usuario(bsTokenizer.nextToken(),bsTokenizer.nextToken(),bsTokenizer.nextToken(),new Email(bsTokenizer.nextToken())));//Aqui se pasa el usuario
                         getLogFrame().dispose();
                     } else {
                         JOptionPane.showMessageDialog(null, "Usuario no válido");
