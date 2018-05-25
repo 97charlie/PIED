@@ -29,62 +29,66 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        AsientosTextField = new javax.swing.JTextField();
+        MarcaTextField = new javax.swing.JTextField();
+        ModeloTextField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        NumEmpleadoTextField = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        EliminarBusButton = new javax.swing.JButton();
+        LimpiarBusButton = new javax.swing.JButton();
+        AgregarBusButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        NombreTextField = new javax.swing.JTextField();
+        anioNacimientoTextField = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        AgregarChoferButton = new javax.swing.JButton();
+        EliminarChoferButton = new javax.swing.JButton();
+        LimpiarChoferButton = new javax.swing.JButton();
+        DiaNacimientoTextField = new javax.swing.JTextField();
+        mesNacimientoTextField = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        origenTextField = new javax.swing.JTextField();
+        AgregarRutaButton = new javax.swing.JButton();
+        EliminarRutaButton = new javax.swing.JButton();
+        destinoTextField = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        intermediosTextField = new javax.swing.JTextField();
+        LimpiarRutaButton = new javax.swing.JButton();
+        CerrarSesionButton = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        idRutaTextFieldViaje = new javax.swing.JTextField();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
-        jTextField13 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        minutosDuraTextField = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
-        jTextField15 = new javax.swing.JTextField();
+        idRutaTextFieldRuta = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
+        horaTextField = new javax.swing.JTextField();
+        minutoTextField = new javax.swing.JTextField();
+        horaDuraTextField = new javax.swing.JTextField();
+        IDBusTextField = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        precioTextField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
+        DiaNacimientoTextField1 = new javax.swing.JTextField();
+        mesNacimientoTextField1 = new javax.swing.JTextField();
+        anioNacimientoTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(580, 621));
-        setSize(new java.awt.Dimension(580, 621));
+        setMaximumSize(new java.awt.Dimension(600, 640));
+        setMinimumSize(new java.awt.Dimension(600, 640));
+        setPreferredSize(new java.awt.Dimension(600, 640));
+        setSize(new java.awt.Dimension(600, 640));
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -96,17 +100,17 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(10, 60, 50, 16);
 
-        jTextField1.setToolTipText("");
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(230, 110, 90, 22);
+        AsientosTextField.setToolTipText("");
+        getContentPane().add(AsientosTextField);
+        AsientosTextField.setBounds(230, 110, 90, 22);
 
-        jTextField3.setToolTipText("");
-        getContentPane().add(jTextField3);
-        jTextField3.setBounds(120, 110, 90, 22);
+        MarcaTextField.setToolTipText("");
+        getContentPane().add(MarcaTextField);
+        MarcaTextField.setBounds(120, 110, 90, 22);
 
-        jTextField4.setToolTipText("");
-        getContentPane().add(jTextField4);
-        jTextField4.setBounds(340, 110, 90, 22);
+        ModeloTextField.setToolTipText("");
+        getContentPane().add(ModeloTextField);
+        ModeloTextField.setBounds(340, 110, 90, 22);
 
         jLabel3.setText("Marca");
         getContentPane().add(jLabel3);
@@ -124,61 +128,61 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(10, 200, 38, 16);
 
-        jTextField5.setToolTipText("");
-        getContentPane().add(jTextField5);
-        jTextField5.setBounds(30, 250, 90, 22);
+        NumEmpleadoTextField.setToolTipText("");
+        getContentPane().add(NumEmpleadoTextField);
+        NumEmpleadoTextField.setBounds(30, 250, 90, 22);
 
         jLabel7.setText("Numero de Empleado");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(10, 230, 130, 16);
 
-        jButton1.setText("Eliminar");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(190, 150, 79, 25);
+        EliminarBusButton.setText("Eliminar");
+        getContentPane().add(EliminarBusButton);
+        EliminarBusButton.setBounds(190, 150, 79, 25);
 
-        jButton3.setText("Limpiar");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(300, 150, 75, 25);
+        LimpiarBusButton.setText("Limpiar");
+        getContentPane().add(LimpiarBusButton);
+        LimpiarBusButton.setBounds(300, 150, 75, 25);
 
-        jButton2.setText("Agregar");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(80, 150, 79, 25);
+        AgregarBusButton.setText("Agregar");
+        getContentPane().add(AgregarBusButton);
+        AgregarBusButton.setBounds(80, 150, 79, 25);
 
         jLabel8.setText("Nombre");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(160, 230, 50, 16);
 
-        jTextField6.setToolTipText("");
-        getContentPane().add(jTextField6);
-        jTextField6.setBounds(140, 250, 90, 22);
+        NombreTextField.setToolTipText("");
+        getContentPane().add(NombreTextField);
+        NombreTextField.setBounds(140, 250, 90, 22);
 
-        jTextField7.setToolTipText("");
-        getContentPane().add(jTextField7);
-        jTextField7.setBounds(330, 250, 60, 22);
+        anioNacimientoTextField.setToolTipText("");
+        getContentPane().add(anioNacimientoTextField);
+        anioNacimientoTextField.setBounds(330, 250, 60, 22);
 
         jLabel9.setText("Nacimiento");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(260, 230, 70, 16);
 
-        jButton4.setText("Agregar");
-        getContentPane().add(jButton4);
-        jButton4.setBounds(80, 280, 79, 25);
+        AgregarChoferButton.setText("Agregar");
+        getContentPane().add(AgregarChoferButton);
+        AgregarChoferButton.setBounds(80, 280, 79, 25);
 
-        jButton5.setText("Eliminar");
-        getContentPane().add(jButton5);
-        jButton5.setBounds(190, 280, 79, 25);
+        EliminarChoferButton.setText("Eliminar");
+        getContentPane().add(EliminarChoferButton);
+        EliminarChoferButton.setBounds(190, 280, 79, 25);
 
-        jButton6.setText("Limpiar");
-        getContentPane().add(jButton6);
-        jButton6.setBounds(300, 280, 75, 25);
+        LimpiarChoferButton.setText("Limpiar");
+        getContentPane().add(LimpiarChoferButton);
+        LimpiarChoferButton.setBounds(310, 280, 75, 25);
 
-        jTextField8.setToolTipText("");
-        getContentPane().add(jTextField8);
-        jTextField8.setBounds(250, 250, 40, 22);
+        DiaNacimientoTextField.setToolTipText("");
+        getContentPane().add(DiaNacimientoTextField);
+        DiaNacimientoTextField.setBounds(250, 250, 40, 22);
 
-        jTextField9.setToolTipText("");
-        getContentPane().add(jTextField9);
-        jTextField9.setBounds(290, 250, 40, 22);
+        mesNacimientoTextField.setToolTipText("");
+        getContentPane().add(mesNacimientoTextField);
+        mesNacimientoTextField.setBounds(290, 250, 40, 22);
 
         jLabel10.setText("Ruta");
         getContentPane().add(jLabel10);
@@ -188,21 +192,21 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel11);
         jLabel11.setBounds(150, 350, 40, 16);
 
-        jTextField10.setToolTipText("");
-        getContentPane().add(jTextField10);
-        jTextField10.setBounds(130, 370, 90, 22);
+        origenTextField.setToolTipText("");
+        getContentPane().add(origenTextField);
+        origenTextField.setBounds(130, 370, 90, 22);
 
-        jButton7.setText("Agregar");
-        getContentPane().add(jButton7);
-        jButton7.setBounds(90, 410, 79, 25);
+        AgregarRutaButton.setText("Agregar");
+        getContentPane().add(AgregarRutaButton);
+        AgregarRutaButton.setBounds(90, 410, 79, 25);
 
-        jButton8.setText("Eliminar");
-        getContentPane().add(jButton8);
-        jButton8.setBounds(200, 410, 79, 25);
+        EliminarRutaButton.setText("Eliminar");
+        getContentPane().add(EliminarRutaButton);
+        EliminarRutaButton.setBounds(200, 410, 79, 25);
 
-        jTextField2.setToolTipText("");
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(240, 370, 90, 22);
+        destinoTextField.setToolTipText("");
+        getContentPane().add(destinoTextField);
+        destinoTextField.setBounds(240, 370, 90, 22);
 
         jLabel12.setText("Destino");
         getContentPane().add(jLabel12);
@@ -212,17 +216,17 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel13);
         jLabel13.setBounds(360, 350, 70, 20);
 
-        jTextField11.setToolTipText("");
-        getContentPane().add(jTextField11);
-        jTextField11.setBounds(350, 370, 90, 22);
+        intermediosTextField.setToolTipText("");
+        getContentPane().add(intermediosTextField);
+        intermediosTextField.setBounds(350, 370, 90, 22);
 
-        jButton9.setText("Limpiar");
-        getContentPane().add(jButton9);
-        jButton9.setBounds(310, 410, 75, 25);
+        LimpiarRutaButton.setText("Limpiar");
+        getContentPane().add(LimpiarRutaButton);
+        LimpiarRutaButton.setBounds(310, 410, 75, 25);
 
-        jButton10.setText("Cerrar Sesión");
-        getContentPane().add(jButton10);
-        jButton10.setBounds(267, 20, 130, 25);
+        CerrarSesionButton.setText("Cerrar Sesión");
+        getContentPane().add(CerrarSesionButton);
+        CerrarSesionButton.setBounds(430, 20, 130, 25);
 
         jLabel14.setText("Viaje");
         getContentPane().add(jLabel14);
@@ -232,9 +236,9 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jLabel15);
         jLabel15.setBounds(30, 480, 50, 16);
 
-        jTextField12.setToolTipText("");
-        getContentPane().add(jTextField12);
-        jTextField12.setBounds(20, 500, 90, 22);
+        idRutaTextFieldViaje.setToolTipText("");
+        getContentPane().add(idRutaTextFieldViaje);
+        idRutaTextFieldViaje.setBounds(20, 500, 90, 22);
 
         jButton11.setText("Agregar");
         getContentPane().add(jButton11);
@@ -244,29 +248,25 @@ public class vistaAdministrador extends javax.swing.JFrame {
         getContentPane().add(jButton12);
         jButton12.setBounds(200, 540, 79, 25);
 
-        jTextField13.setToolTipText("");
-        getContentPane().add(jTextField13);
-        jTextField13.setBounds(130, 500, 90, 22);
-
         jLabel16.setText("Fecha");
         getContentPane().add(jLabel16);
         jLabel16.setBounds(160, 480, 34, 16);
 
         jLabel17.setText("Hora Salida");
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(250, 480, 70, 20);
+        jLabel17.setBounds(290, 480, 70, 20);
 
-        jTextField14.setToolTipText("");
-        getContentPane().add(jTextField14);
-        jTextField14.setBounds(390, 500, 40, 22);
+        minutosDuraTextField.setToolTipText("");
+        getContentPane().add(minutosDuraTextField);
+        minutosDuraTextField.setBounds(420, 500, 40, 22);
 
         jButton13.setText("Limpiar");
         getContentPane().add(jButton13);
         jButton13.setBounds(310, 540, 75, 25);
 
-        jTextField15.setToolTipText("");
-        getContentPane().add(jTextField15);
-        jTextField15.setBounds(20, 370, 90, 22);
+        idRutaTextFieldRuta.setToolTipText("");
+        getContentPane().add(idRutaTextFieldRuta);
+        idRutaTextFieldRuta.setBounds(20, 370, 90, 22);
 
         jLabel18.setText("ID Ruta");
         getContentPane().add(jLabel18);
@@ -274,35 +274,47 @@ public class vistaAdministrador extends javax.swing.JFrame {
 
         jLabel19.setText("Duracion");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(360, 480, 50, 20);
+        jLabel19.setBounds(390, 480, 50, 20);
 
-        jTextField17.setToolTipText("");
-        getContentPane().add(jTextField17);
-        jTextField17.setBounds(240, 500, 40, 22);
+        horaTextField.setToolTipText("");
+        getContentPane().add(horaTextField);
+        horaTextField.setBounds(280, 500, 40, 22);
 
-        jTextField16.setToolTipText("");
-        getContentPane().add(jTextField16);
-        jTextField16.setBounds(280, 500, 40, 22);
+        minutoTextField.setToolTipText("");
+        getContentPane().add(minutoTextField);
+        minutoTextField.setBounds(320, 500, 40, 22);
 
-        jTextField18.setToolTipText("");
-        getContentPane().add(jTextField18);
-        jTextField18.setBounds(350, 500, 40, 22);
+        horaDuraTextField.setToolTipText("");
+        getContentPane().add(horaDuraTextField);
+        horaDuraTextField.setBounds(380, 500, 40, 22);
 
-        jTextField19.setToolTipText("");
-        getContentPane().add(jTextField19);
-        jTextField19.setBounds(20, 110, 90, 22);
+        IDBusTextField.setToolTipText("");
+        getContentPane().add(IDBusTextField);
+        IDBusTextField.setBounds(20, 110, 90, 22);
 
         jLabel20.setText("ID Bus");
         getContentPane().add(jLabel20);
         jLabel20.setBounds(45, 90, 40, 16);
 
-        jTextField20.setToolTipText("");
-        getContentPane().add(jTextField20);
-        jTextField20.setBounds(460, 500, 90, 22);
+        precioTextField.setToolTipText("");
+        getContentPane().add(precioTextField);
+        precioTextField.setBounds(480, 500, 90, 22);
 
         jLabel21.setText("Precio");
         getContentPane().add(jLabel21);
-        jLabel21.setBounds(490, 480, 40, 16);
+        jLabel21.setBounds(510, 480, 40, 16);
+
+        DiaNacimientoTextField1.setToolTipText("");
+        getContentPane().add(DiaNacimientoTextField1);
+        DiaNacimientoTextField1.setBounds(120, 500, 40, 22);
+
+        mesNacimientoTextField1.setToolTipText("");
+        getContentPane().add(mesNacimientoTextField1);
+        mesNacimientoTextField1.setBounds(160, 500, 40, 22);
+
+        anioNacimientoTextField1.setToolTipText("");
+        getContentPane().add(anioNacimientoTextField1);
+        anioNacimientoTextField1.setBounds(200, 500, 60, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -344,19 +356,35 @@ public class vistaAdministrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    public javax.swing.JButton AgregarBusButton;
+    public javax.swing.JButton AgregarChoferButton;
+    public javax.swing.JButton AgregarRutaButton;
+    public javax.swing.JTextField AsientosTextField;
+    private javax.swing.JButton CerrarSesionButton;
+    public javax.swing.JTextField DiaNacimientoTextField;
+    public javax.swing.JTextField DiaNacimientoTextField1;
+    public javax.swing.JButton EliminarBusButton;
+    public javax.swing.JButton EliminarChoferButton;
+    public javax.swing.JButton EliminarRutaButton;
+    public javax.swing.JTextField IDBusTextField;
+    public javax.swing.JButton LimpiarBusButton;
+    public javax.swing.JButton LimpiarChoferButton;
+    public javax.swing.JButton LimpiarRutaButton;
+    public javax.swing.JTextField MarcaTextField;
+    public javax.swing.JTextField ModeloTextField;
+    public javax.swing.JTextField NombreTextField;
+    public javax.swing.JTextField NumEmpleadoTextField;
+    public javax.swing.JTextField anioNacimientoTextField;
+    public javax.swing.JTextField anioNacimientoTextField1;
+    public javax.swing.JTextField destinoTextField;
+    public javax.swing.JTextField horaDuraTextField;
+    public javax.swing.JTextField horaTextField;
+    public javax.swing.JTextField idRutaTextFieldRuta;
+    public javax.swing.JTextField idRutaTextFieldViaje;
+    public javax.swing.JTextField intermediosTextField;
+    public javax.swing.JButton jButton11;
+    public javax.swing.JButton jButton12;
+    public javax.swing.JButton jButton13;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -378,25 +406,11 @@ public class vistaAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    public javax.swing.JTextField mesNacimientoTextField;
+    public javax.swing.JTextField mesNacimientoTextField1;
+    public javax.swing.JTextField minutoTextField;
+    public javax.swing.JTextField minutosDuraTextField;
+    public javax.swing.JTextField origenTextField;
+    public javax.swing.JTextField precioTextField;
     // End of variables declaration//GEN-END:variables
 }

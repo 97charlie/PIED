@@ -10,5 +10,20 @@ package Insercion;
  * @author MS
  */
 public class ControladorVistaAdministrador {
+    private vistaAdministrador adminView;
+
+    public ControladorVistaAdministrador(vistaAdministrador adminView) {
+        this.adminView = adminView;
+    }
+
+    public vistaAdministrador getAdminView() {
+        return adminView;
+    }
+
+    public void setAdminView(vistaAdministrador adminView) {
+        this.adminView = adminView;
+    }
+    
+    
     
 }

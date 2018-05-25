@@ -49,6 +49,7 @@ public class vistaReservacion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
@@ -172,6 +173,10 @@ public class vistaReservacion extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(10, 10, 150, 30);
 
+        jButton10.setText("Cerrar Sesión");
+        getContentPane().add(jButton10);
+        jButton10.setBounds(320, 20, 130, 25);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -212,6 +217,7 @@ public class vistaReservacion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
