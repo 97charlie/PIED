@@ -39,168 +39,80 @@ public class Login extends javax.swing.JFrame {
 
         jLabelUsr = new javax.swing.JLabel();
         jLabelEmail = new javax.swing.JLabel();
-        jTextFieldUsr = new javax.swing.JTextField();
-        jTextFieldEmail = new javax.swing.JTextField();
-        jButtonAceptar = new javax.swing.JButton();
-        jButtonCancelar = new javax.swing.JButton();
+        EmailTextField = new javax.swing.JTextField();
+        passTextField = new javax.swing.JTextField();
+        IngresarButton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButtonRegistro = new javax.swing.JButton();
+        RegistrarButton = new javax.swing.JButton();
+        apeTextField = new javax.swing.JTextField();
+        jLabelEmail1 = new javax.swing.JLabel();
+        jLabelUsr1 = new javax.swing.JLabel();
+        nombreTextField = new javax.swing.JTextField();
+        emailRegistrarTextField = new javax.swing.JTextField();
+        jLabelEmail2 = new javax.swing.JLabel();
+        jLabelUsr2 = new javax.swing.JLabel();
+        passRegistrarTextField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabelUsr.setText("Usuario");
+        jLabelUsr.setText("Email");
+        getContentPane().add(jLabelUsr);
+        jLabelUsr.setBounds(38, 82, 70, 16);
 
-        jLabelEmail.setText("Email");
+        jLabelEmail.setText("Contraseña");
+        getContentPane().add(jLabelEmail);
+        jLabelEmail.setBounds(38, 124, 80, 16);
+        getContentPane().add(EmailTextField);
+        EmailTextField.setBounds(131, 79, 281, 22);
+        getContentPane().add(passTextField);
+        passTextField.setBounds(131, 121, 281, 22);
 
-        jTextFieldEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldEmailActionPerformed(evt);
-            }
-        });
-
-        jButtonAceptar.setText("Aceptar");
-        jButtonAceptar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAceptarActionPerformed(evt);
-            }
-        });
-
-        jButtonCancelar.setText("Cancelar");
-        jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCancelarActionPerformed(evt);
-            }
-        });
+        IngresarButton.setText("Ingresar");
+        getContentPane().add(IngresarButton);
+        IngresarButton.setBounds(210, 160, 83, 25);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         jLabel4.setText("Inicio de sesión");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(156, 13, 187, 29);
 
         jLabel3.setFont(new java.awt.Font("Franklin Gothic Book", 3, 14)); // NOI18N
         jLabel3.setText("¿No, cuentas con un usuario?");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(140, 210, 209, 16);
 
-        jButtonRegistro.setText("Registrarse");
-        jButtonRegistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonRegistroActionPerformed(evt);
-            }
-        });
+        RegistrarButton.setText("Registrarse");
+        getContentPane().add(RegistrarButton);
+        RegistrarButton.setBounds(210, 440, 97, 25);
+        getContentPane().add(apeTextField);
+        apeTextField.setBounds(130, 300, 281, 22);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButtonAceptar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonCancelar))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(106, 106, 106))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelUsr)
-                    .addComponent(jLabelEmail))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonRegistro)
-                    .addComponent(jLabel3)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jTextFieldEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
-                        .addComponent(jTextFieldUsr)))
-                .addGap(0, 37, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4)
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelUsr)
-                    .addComponent(jTextFieldUsr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelEmail)
-                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jButtonRegistro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonAceptar)
-                    .addComponent(jButtonCancelar)))
-        );
+        jLabelEmail1.setText("Apellidos");
+        getContentPane().add(jLabelEmail1);
+        jLabelEmail1.setBounds(30, 300, 70, 16);
+
+        jLabelUsr1.setText("Nombres");
+        getContentPane().add(jLabelUsr1);
+        jLabelUsr1.setBounds(30, 260, 70, 16);
+        getContentPane().add(nombreTextField);
+        nombreTextField.setBounds(130, 250, 281, 22);
+        getContentPane().add(emailRegistrarTextField);
+        emailRegistrarTextField.setBounds(130, 400, 281, 22);
+
+        jLabelEmail2.setText("Email");
+        getContentPane().add(jLabelEmail2);
+        jLabelEmail2.setBounds(30, 400, 70, 16);
+
+        jLabelUsr2.setText("Contraseña");
+        getContentPane().add(jLabelUsr2);
+        jLabelUsr2.setBounds(30, 360, 90, 16);
+        getContentPane().add(passRegistrarTextField);
+        passRegistrarTextField.setBounds(130, 350, 281, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldEmailActionPerformed
-
-    private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
-           String limite = " "; 
-        String[] trozos; // Dividimos la linea del dichero en unidades independientes
-        String nombre;
-        String nombreTrozo; 
-        Boolean encontrado = false; // Para saber si hemos el usuario que buscabamos
-
-        jTextFieldEmail.setText("");
-        jTextFieldUsr.setText("");
-
-        if (jTextFieldUsr.getText().equals("")) {
-            JOptionPane.showMessageDialog(this, "El campo de la clave de usuario está vacío", "Campo vacío", JOptionPane.INFORMATION_MESSAGE);
-        } else {
-            try {
-
-                BufferedReader reader = new BufferedReader(new FileReader(fichero));  // Cargamos el fichero
-                String linea = reader.readLine(); // leemos la primera linea
-
-                if (linea == null) {
-                    JOptionPane.showMessageDialog(this, "El fichero está vacío", "Fichero vacío", JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    do {
-                        trozos = linea.split(limite, 3); //Dividimos la linea leida en tres parte
-
-                        nombre = jTextFieldUsr.getText().toUpperCase();
-                        nombreTrozo = trozos[0].toUpperCase();
-
-                        if (nombreTrozo.equals(nombre)) {
-                            encontrado = true;
-                            jTextFieldEmail.setText(trozos[1]);
-                           
-                        }
-
-                        linea = reader.readLine(); // leemos la siguiente línea
-
-                    } while (linea != null);
-
-                    if (!encontrado) {
-                        JOptionPane.showMessageDialog(this, "No se han encontrado coincidencias", "No hay coincidencias", JOptionPane.INFORMATION_MESSAGE);
-                    }
-                }
-
-                reader.close();// Cerramos el fichero
-
-            } catch (IOException ex) {
-                //Logger.getLogger(Consultar.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    
-    }//GEN-LAST:event_jButtonAceptarActionPerformed
-
-    private void jButtonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelarActionPerformed
-      System.exit(0);
-    }//GEN-LAST:event_jButtonCancelarActionPerformed
-
-    private void jButtonRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegistroActionPerformed
-        CreaUsr usr = new CreaUsr();
-    }//GEN-LAST:event_jButtonRegistroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,14 +150,21 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonAceptar;
-    private javax.swing.JButton jButtonCancelar;
-    private javax.swing.JButton jButtonRegistro;
+    public javax.swing.JTextField EmailTextField;
+    public javax.swing.JButton IngresarButton;
+    public javax.swing.JButton RegistrarButton;
+    public javax.swing.JTextField apeTextField;
+    public javax.swing.JTextField emailRegistrarTextField;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelEmail;
+    private javax.swing.JLabel jLabelEmail1;
+    private javax.swing.JLabel jLabelEmail2;
     private javax.swing.JLabel jLabelUsr;
-    private javax.swing.JTextField jTextFieldEmail;
-    private javax.swing.JTextField jTextFieldUsr;
+    private javax.swing.JLabel jLabelUsr1;
+    private javax.swing.JLabel jLabelUsr2;
+    public javax.swing.JTextField nombreTextField;
+    public javax.swing.JTextField passRegistrarTextField;
+    public javax.swing.JTextField passTextField;
     // End of variables declaration//GEN-END:variables
 }

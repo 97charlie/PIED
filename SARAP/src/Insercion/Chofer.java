@@ -43,6 +43,11 @@ public class Chofer {
     public void setNacimiento(Fecha nacimiento) {
         this.nacimiento = nacimiento;
     }
+
+    @Override
+    public String toString() {
+        return getNumEmpleado() + "," + getNombre() + "," + getNacimiento();
+    }
     
     
 }

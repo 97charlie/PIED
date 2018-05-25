@@ -43,6 +43,11 @@ public class Fecha {
     public void setAnio(int anio) {
         this.anio = anio;
     }
+
+    @Override
+    public String toString() {
+        return getDia() + "," + getMes() + "," + getAnio();
+    }
     
     
 }

@@ -10,6 +10,7 @@ package Insercion;
  * @author MS
  */
 public class Viaje {
+
     private Ruta rutaDeViaje;
     private Ruta fechaDeViaje;
     private Hora horaSalida;
@@ -73,6 +74,10 @@ public class Viaje {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return getRutaDeViaje() + "," + getFechaDeViaje() + "," + getHoraSalida() + "," + getDuracion() + "," + getBusDeViaje() + "," + getPrecio();
+    }
+
 }

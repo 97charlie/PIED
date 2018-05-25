@@ -54,8 +54,11 @@ public class Autobus {
     public void setNumAsientos(int numAsientos) {
         this.numAsientos = numAsientos;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return getIdAutobus()+","+getNumAsientos()+","+getMarca()+","+getModelo(); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

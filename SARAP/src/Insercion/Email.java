@@ -10,6 +10,7 @@ package Insercion;
  * @author MS
  */
 public class Email {
+
     private String usuario;
     private String dominio;
 
@@ -33,8 +34,8 @@ public class Email {
     public void setDominio(String dominio) {
         this.dominio = dominio;
     }
-    
-        public String toString(){
-        return getUsuario()+ "@" + getDominio();
+
+    public String toString() {
+        return getUsuario() + "@" + getDominio();
     }
 }

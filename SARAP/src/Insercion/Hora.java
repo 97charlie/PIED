@@ -33,6 +33,10 @@ public class Hora {
     public void setMinutos(int minutos) {
         this.minutos = minutos;
     }
-    
+
+    @Override
+    public String toString() {
+        return getHoras() + "," + getMinutos();
+    }
     
 }

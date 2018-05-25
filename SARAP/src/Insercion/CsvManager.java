@@ -13,11 +13,11 @@ import java.util.StringTokenizer;
  *
  * @author MS
  */
-public class csvManager {
+public class CsvManager {
 
     private String csvURL;
 
-    public csvManager(String csvURL) {
+    public CsvManager(String csvURL) {
         setCsvURL(csvURL);
     }
 
@@ -63,6 +63,44 @@ public class csvManager {
         }
     }
 
+    public String buscarEnArchivoDarLinea(String auxString, String auxString2) {
+        boolean foundFirst = false;
+        boolean foundSecond = false;
+
+        try {
+            Scanner lectorArchivo = new Scanner(new File(getCsvURL()));
+
+            while (lectorArchivo.hasNextLine()) {
+                String lectorLine = lectorArchivo.nextLine();
+                StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
+                int elementos = tokenizedLine.countTokens();
+
+                for (int i = 0; i < elementos; i++) {
+                    String auxToken = tokenizedLine.nextToken();
+                    if (auxToken.equals(auxString)) {
+                        foundFirst = true;
+                    }
+
+                    if (auxToken.equals(auxString2)) {
+                        foundSecond = true;
+                    }
+                }
+
+                if (foundFirst && foundSecond) {
+                    return lectorLine;
+                }
+
+                foundFirst = false;
+                foundSecond = false;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e);
+        }
+        return null;
+    }
+
     public String buscarEnArchivoDarLinea(String auxString) {
 
         try {
@@ -71,32 +109,9 @@ public class csvManager {
             while (lectorArchivo.hasNextLine()) {
                 String lectorLine = lectorArchivo.nextLine();
                 StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
+                int elementos = tokenizedLine.countTokens();
 
-                for (int i = 0; i < tokenizedLine.countTokens(); i++) {
-                    if (tokenizedLine.nextToken().equals(auxString)) {
-                        return lectorLine;
-                    }
-                }
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e);
-        }
-
-        return null;
-    }
-
-    public String buscarEnArchivoDarNumLinea(String auxString) {
-
-        try {
-            Scanner lectorArchivo = new Scanner(new File(getCsvURL()));
-
-            while (lectorArchivo.hasNextLine()) {
-                String lectorLine = lectorArchivo.nextLine();
-                StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
-
-                for (int i = 0; i < tokenizedLine.countTokens(); i++) {
+                for (int i = 0; i < elementos; i++) {
                     if (tokenizedLine.nextToken().equals(auxString)) {
                         return lectorLine;
                     }
@@ -139,4 +154,5 @@ public class csvManager {
             System.out.println(e);
         }
     }
+
 }

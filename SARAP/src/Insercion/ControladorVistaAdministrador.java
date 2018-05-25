@@ -39,7 +39,14 @@ public class ControladorVistaAdministrador {
         getAdminView().AgregarBusButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                
+                //Tomar los datos de los textfield
+                String idBus = getAdminView().idBusTextField.getText();
+                String marca = getAdminView().MarcaTextField.getText();
+                String asientos = getAdminView().AsientosTextField.getText();
+                String modelo = getAdminView().ModeloTextField.getText();
+
+                CsvManager manejador = new CsvManager("Autobus.txt");
+                manejador.agregarLineaAlFinal(idBus + "," + marca + "," + asientos + "," + modelo);
             }
         });
 

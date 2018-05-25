@@ -14,15 +14,13 @@ public class Reservacion {
     private String destino;
     private Fecha fechaDeSalida;
     private Fecha fechaDeRegreso;
-    private boolean redondo;
     private Hora horaLlegada;
 
-    public Reservacion(String origen, String destino, Fecha fechaDeSalida, Fecha fechaDeRegreso, boolean redondo, Hora horaLlegada) {
+    public Reservacion(String origen, String destino, Fecha fechaDeSalida, Fecha fechaDeRegreso, Hora horaLlegada) {
         this.origen = origen;
         this.destino = destino;
         this.fechaDeSalida = fechaDeSalida;
         this.fechaDeRegreso = fechaDeRegreso;
-        this.redondo = redondo;
         this.horaLlegada = horaLlegada;
     }
 
@@ -58,14 +56,6 @@ public class Reservacion {
         this.fechaDeRegreso = fechaDeRegreso;
     }
 
-    public boolean isRedondo() {
-        return redondo;
-    }
-
-    public void setRedondo(boolean redondo) {
-        this.redondo = redondo;
-    }
-
     public Hora getHoraLlegada() {
         return horaLlegada;
     }
@@ -73,8 +63,11 @@ public class Reservacion {
     public void setHoraLlegada(Hora horaLlegada) {
         this.horaLlegada = horaLlegada;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return getOrigen() + "," + getDestino() + "," + getFechaDeSalida() + "," + getFechaDeRegreso() + "," + getHoraLlegada();
+    }
     
     
 }
