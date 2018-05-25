@@ -61,7 +61,31 @@ public class csvManager {
         }
     }
 
-    public String buscarEnArchivo(String auxString) {
+    public String buscarEnArchivoDarLinea(String auxString) {
+
+        try {
+            Scanner lectorArchivo = new Scanner(new File(getCsvURL()));
+
+            while (lectorArchivo.hasNextLine()) {
+                String lectorLine = lectorArchivo.nextLine();
+                StringTokenizer tokenizedLine = new StringTokenizer(lectorLine, ",");
+
+                for (int i = 0; i < tokenizedLine.countTokens(); i++) {
+                    if (tokenizedLine.nextToken().equals(auxString)) {
+                        return lectorLine;
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e);
+        }
+
+        return null;
+    }
+
+    public String buscarEnArchivoDarNumLinea(String auxString) {
 
         try {
             Scanner lectorArchivo = new Scanner(new File(getCsvURL()));

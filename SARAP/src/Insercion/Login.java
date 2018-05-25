@@ -188,7 +188,7 @@ public class Login extends javax.swing.JFrame {
                 reader.close();// Cerramos el fichero
 
             } catch (IOException ex) {
-                Logger.getLogger(Consultar.class.getName()).log(Level.SEVERE, null, ex);
+                //Logger.getLogger(Consultar.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     
