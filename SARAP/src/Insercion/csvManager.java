@@ -1,7 +1,9 @@
 package Insercion;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -109,4 +111,32 @@ public class csvManager {
         return null;
     }
 
+    public void eliminarLineaDelArchivo(String auxString) {
+
+        try {
+
+            File inputFile = new File(getCsvURL());
+            File tempFile = new File("myTempFile.txt");
+
+            BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
+
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                // trim newline when comparing with lineToRemove
+                String trimmedLine = currentLine.trim();
+                if (trimmedLine.equals(auxString)) {
+                    continue;
+                }
+                writer.write(currentLine + System.getProperty("line.separator"));
+            }
+            writer.close();
+            reader.close();
+            boolean successful = tempFile.renameTo(inputFile);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e);
+        }
+    }
 }
